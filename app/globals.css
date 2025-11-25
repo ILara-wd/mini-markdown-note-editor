@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Truncate text utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Markdown Preview Styling */
+.markdown-preview {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.markdown-preview table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  text-align: left;
+  padding: 8px 12px;
+  border: 1px solid #000;
+}
+
+.markdown-preview th {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.markdown-preview hr {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 24px 0;
+}
+
+/* Custom highlight.js overrides */
+.hljs {
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 4px;
+  padding: 16px !important;
+}
+
+/* Code block styling */
+.markdown-preview pre {
+  margin: 16px 0;
+  overflow-x: auto;
+}
+
+.markdown-preview pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 14px;
+  line-height: 1.4;
+}
